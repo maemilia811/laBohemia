@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/pizza-icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/pizza.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <title>Contacto</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="cajaLogo">
+            <img src="img/pizza.png" alt="Logo de página" id="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="sucursales.html">Sucursales</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>  
+        </nav>       
+    </header>
+
+    <main class="mainContacto">
+        <h3 class="titulo">Consultas</h4>
+        <section class="form">
+            <form  onsubmit="return validateForm()" >    
+                 <div>
+                    <label for="nombre" class="texto">Nombre:</label>
+                    <input class="casillas" type="text"  id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="celular" class="texto" >Celular:</label>
+                    <input class="casillas" type="celular" id="celular" name="celular" required>
+                </div>
+                <div>    
+                    <label for="email" class="texto">Email:</label>
+                    <input class="casillas"  type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje" class="texto" >Mensaje:</label>
+                    <textarea class="casillas" id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
+                </div>
+                
+                <input class="button" type="submit" value="Enviar">
+            </form>
+        </section>
+        <div class="datos">
+            <h3 class="subtitulo">Datos</h3>
+            <a href="https://www.whatsapp.com/"><img src="img/whatsapp.png" width="20" height="20">  +54911123456789</img></a>
+            <a href="https://www.instagram.com/"><img src="img/instagram.ico" width="20" height="20">  laBohemiapizzas</img></a>
+            <a href="https://www.gmail.com/">labohemiapizzeria@gmail.com</a>
+        </div>
+    </main>
+    
+    <footer>
+        <ul>
+            <li><a href="https://buenosaires.gob.ar/inicio/privacidad">Política de privacidad</a></li>
+            <li><a href="https://www.buenosaires.gob.ar/defensaconsumidor">Defensa del consumidor</a></li>
+            <li><a href="https://buenosaires.gob.ar/inicio/terminos-y-condiciones">Términos y condiciones</a></li>
+        </ul>  
+        <div class="cajaLogo">
+            <img src="img/pizza.png" alt="Logo de página" id="logo" title="Pizzeria">
+        </div>
+    </footer>
+    
+    <script src="contacto.js"></script>
+
+</body>
+</html>
